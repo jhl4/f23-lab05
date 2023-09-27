@@ -20,3 +20,9 @@ Based on the provided implementations, when would it be more appropriate to use 
 new inherited IntList is a sortedIntList after all. 
 We could use delegation with the AbstractIntList, delegating functionalities of the abstractIntList to the SortedIntList and SortedIntLiinkedList
 aka the Strategy Pattern
+
+Inheritance vs. Delegation
+-Delegation: We just need to look at specification, can basically assume the sortedIntList class works.
+-Inheritance: Since we extend from SortedIntList and we add functionality on top of it, we need to know the implementation of SortedIntList
+By extending/inheriting, we modify the existing SortedIntList class.
+By delegation, we simply use the existing functionality of the SortedIntList class without modifying it

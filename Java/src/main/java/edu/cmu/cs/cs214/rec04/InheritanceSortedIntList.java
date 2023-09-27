@@ -10,7 +10,7 @@ package edu.cmu.cs.cs214.rec04;
  *
  */
 
-public class InheritanceSortedIntList extends SortedIntList{
+public class InheritanceSortedIntList extends SortedIntList {
 
     private int totalAddedTimes = 0;
 
@@ -25,11 +25,9 @@ public class InheritanceSortedIntList extends SortedIntList{
      */
     @Override
     public boolean add(int num) {
-        boolean result = super.add(num);
-        if (result) {
-            this.totalAddedTimes++;
-        }
-        return result;
+        super.add(num);
+        this.totalAddedTimes++;
+        return true;
     }
     
     @Override

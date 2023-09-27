@@ -21,6 +21,13 @@ public class DelegationSortedIntList implements IntegerList {
         this.totalAdded = 0;
     }
 
+    /**
+     * Adds the specified int to the list.
+     *
+     * @param num an integer to be added to the list
+     * Increment totalAddedTimes by 1 if added
+     * @return true if the list is changed as a result of the call
+     */
     public boolean add(int num) {
        boolean result = sList.add(num);
        if (result) {
